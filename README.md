@@ -4,8 +4,9 @@ mvn function:run
 ####How to push to gcp:
 
 1. mvn package
-2. 
-```gcloud functions deploy gcp-cloud-function \
+2. Deploy to gcp (requires gcp setup) 
+```
+    gcloud functions deploy gcp-cloud-function \
     --entry-point org.springframework.cloud.function.adapter.gcp.GcfJarLauncher \
     --runtime java11 \
     --trigger-http \
